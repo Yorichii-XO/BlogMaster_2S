@@ -1,0 +1,45 @@
+{
+  "tweets": [
+    {
+      "id": "1720747378894",
+      "content": "www",
+      "timestamp": "12/07/2024 02:22:58"
+    },
+    {
+      "liked": true,
+      "id": "1720747430887"
+    },
+    {
+      "id": "1",
+      "user": "Sonali Hirave",
+      "username": "ShonaDesign",
+      "date": "16 April",
+      "avatar": "https://pbs.twimg.com/profile_images/1121328878142853120/e-rpjoJi_bigger.png",
+      "content": "Day 07 of the challenge #100DaysOfCode I was wondering what I can do with #tailwindcss, so just started building Twitter UI using Tailwind and so far it looks so promising. I will post my code after completion. [07/100]",
+      "tags": "#WomenWhoCode #CodeNewbie",
+      "liked": true
+    },
+    {
+      "id": "724b",
+      "content": "nn"
+    },
+    {
+      "id": 1720777151721,
+      "content": "nn",
+      "timestamp": "12/07/2024 10:39:11",
+      "liked": true
+    },
+    {
+      "id": 1720777156129,
+      "content": "hhahah",
+      "timestamp": "12/07/2024 10:39:16",
+      "liked": false
+    },
+    {
+      "id": 1720779811454,
+      "content": "nannnanannananbna",
+      "timestamp": "12/07/2024 11:23:31",
+      "liked": true
+    }
+  ]
+}
