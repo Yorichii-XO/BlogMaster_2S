@@ -2,44 +2,91 @@
   "tweets": [
     {
       "id": "1720747378894",
-      "content": "www",
-      "timestamp": "12/07/2024 02:22:58"
+      "name": "BrooklynDad_Defiant!",
+      "nikename": "@ivanopanetti",
+      "content": "Kamala Harris is the ONLY Vice President who matters to me right now.",
+      "avatar": "https://pbs.twimg.com/profile_images/1286711762725871617/gA2IaqbR_400x400.jpg",
+      "image": "https://pbs.twimg.com/media/GSjRqTHWwAEC_3p?format=jpg&name=small",
+      "timestamp": "12/07/2024 11:23:31",
+      "liked": true
     },
     {
-      "liked": true,
-      "id": "1720747430887"
+      "id": "1720747430887",
+      "name": "Republicans against Trump",
+      "nikename": "@RpsAgainstTrump",
+      "content": "GOP Senator Mitt Romney: “I don’t know that I can disrespect someone more than J. D. Vance.",
+      "avatar": "https://pbs.twimg.com/profile_images/1552023520347099136/tIGoFfQt_400x400.jpg",
+      "image": "https://pbs.twimg.com/media/GSjqFvbWwAE5a7e?format=jpg&name=small",
+      "timestamp": "12/07/2024 11:23:31",
+      "liked": true
     },
     {
       "id": "1",
-      "user": "Sonali Hirave",
-      "username": "ShonaDesign",
-      "date": "16 April",
-      "avatar": "https://pbs.twimg.com/profile_images/1121328878142853120/e-rpjoJi_bigger.png",
-      "content": "Day 07 of the challenge #100DaysOfCode I was wondering what I can do with #tailwindcss, so just started building Twitter UI using Tailwind and so far it looks so promising. I will post my code after completion. [07/100]",
-      "tags": "#WomenWhoCode #CodeNewbie",
+      "name": "Ayaan Hirsi Ali",
+      "nikename": "@Ayaan",
+      "content": "The argument that Trump posed a Hitler-level threat to American democracy can be traced back to the first outbreak of Trump Derangement Syndrome among left-leaning journalists in 2016. What made the argument so malignant was that it justified using all means possible to disrupt",
+      "image": "https://pbs.twimg.com/media/GSdZKelXIAA75yJ?format=jpg&name=small",
+      "avatar": "https://pbs.twimg.com/profile_images/1356355762797207552/PR7XKd8d_400x400.jpg",
+      "timestamp": "12/07/2024 11:23:31",
       "liked": true
     },
     {
       "id": "724b",
-      "content": "nn"
-    },
-    {
-      "id": 1720777151721,
-      "content": "nn",
-      "timestamp": "12/07/2024 10:39:11",
-      "liked": true
-    },
-    {
-      "id": 1720777156129,
-      "content": "hhahah",
-      "timestamp": "12/07/2024 10:39:16",
-      "liked": false
-    },
-    {
-      "id": 1720779811454,
-      "content": "nannnanannananbna",
+      "name": "equilibrium!",
+      "nikename": "@Equilibrium_420",
+      "content": "Good interview with Trump and his current state of mind following the assassination attempt.",
+      "avatar": "https://pbs.twimg.com/profile_images/1120469732489089025/C1ROmMZv_400x400.jpg",
+      "image": "https://pbs.twimg.com/media/GSf219OXIAAcxxk?format=jpg&name=small",
       "timestamp": "12/07/2024 11:23:31",
       "liked": true
+    },
+    {
+      "id": "1720777151721",
+      "nikename": "@the_jandashow",
+      "name": "The Josh ",
+      "content": "Please subscribe to Restoration for more content like this:",
+      "avatar": "https://pbs.twimg.com/profile_images/1671542361933897730/5_kiMH5Y_400x400.jpg",
+      "image": "https://pbs.twimg.com/card_img/1812214271721275392/vAE8NsBt?format=jpg&name=small",
+      "timestamp": "12/07/2024 11:23:31",
+      "liked": true
+    },
+    {
+      "id": "1720777156129",
+      "nikename": "@BartemyS",
+      "name": "$8 Bartemy!",
+      "content": "Biden said this the other day.",
+      "avatar": "https://pbs.twimg.com/profile_images/1576238481789026306/unO3xZkS_400x400.jpg",
+      "image": "https://pbs.twimg.com/media/GSdldUcW0AADuwA?format=jpg&name=small",
+      "timestamp": "12/07/2024 11:23:31",
+      "liked": true
+    },
+    {
+      "id": "1720779811454",
+      "name": "KovalskiP.btc",
+      "nikename": "@KovalskiP_btc",
+      "content": "Effortless compounding my portfolio efficiency",
+      "avatar": "https://pbs.twimg.com/profile_images/1781334627774345217/4z9XislW_400x400.png",
+      "image": "https://pbs.twimg.com/media/GSSEdw5XkAALe5l?format=jpg&name=small",
+      "timestamp": "12/07/2024 11:23:31",
+      "liked": true
+    },
+    {
+      "id": "83ab",
+      "content": "NN\n",
+      "name": "KovalskiP.btc",
+      "nickname": "@KovalskiP_btc",
+      "avatar": "https://pbs.twimg.com/profile_images/1781334627774345217/4z9XislW_400x400.png",
+      "timestamp": "16/07/2024 02:36:24",
+      "like": "false"
+    },
+    {
+      "id": "b609",
+      "content": "UI",
+      "name": "KovalskiP.btc",
+      "nickname": "@KovalskiP_btc",
+      "avatar": "../assets/image5.jpeg",
+      "timestamp": "16/07/2024 02:37:01",
+      "like": "false"
     }
   ]
 }

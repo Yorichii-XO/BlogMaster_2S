@@ -1,16 +1,20 @@
 <template>
   <div id="app">
    
-    
-    <div class="bg-black w-auto">
-      <div class="flex">
-
+ 
+    <div class="bg-black w-auto h-screen flex">
+      <div class="sidebar w-64 fixed h-full text-white"> <!-- Adjust width here -->
       <sidebar-app />
-      <main-app />
-      <div class="right"><rightside-app/></div>
-     
     </div>
-   
+    <section class="flex ml-80 w-full overflow-auto"> <!-- Adjust margin-left accordingly -->
+      <div class="main flex-grow">
+        <main-app />
+      </div>
+      <div class="right w-/2">
+        <rightside-app />
+      </div>
+    </section>
+
     </div>
   </div>
 </template>
@@ -32,21 +36,12 @@ export default {
 </script>
 
 <style>
+.sidebar{
 
-.flex{
-  margin-right: 5%;
 }
+
 #app {
   font-family: 'Arial', sans-serif;
 }
 
-.container {
-  display: flex;
-  min-height: 100vh;
-}
-
-main {
-  flex: 1;
-  padding: 20px;
-}
 </style>

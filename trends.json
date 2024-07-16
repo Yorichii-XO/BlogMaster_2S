@@ -1,0 +1,29 @@
+{
+    "trends": [
+      {
+        "id": 1,
+        "category": "Tech",
+        "hashtag": "#Microsoft363",
+        "tweets": 5466
+      },
+      {
+        "id": 2,
+        "category": "Politics",
+        "hashtag": "#HI-Fashion",
+        "tweets": 8464
+      },
+      {
+        "id": 3,
+        "category": "Rock",
+        "hashtag": "#Ferrari",
+        "tweets": 5586
+      },
+      {
+        "id": 4,
+        "category": "Auto Racing",
+        "hashtag": "#vettel",
+        "tweets": 9416
+      }
+    ]
+  }
+  

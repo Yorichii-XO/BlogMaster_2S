@@ -1,12 +1,12 @@
 <template>
-  <div class="main border border-gray-600 h-auto border-t-0">
-    <!--middle wall-->
+  <div class="border border-gray-600 h-auto border-t-0 w-full">
+    <!-- Header -->
     <div class="flex">
       <div class="flex-1 m-2">
         <h2 class="px-4 py-2 text-xl font-semibold text-white">Home</h2>
       </div>
       <div class="flex-1 px-4 py-2 m-2">
-        <a href="" class="text-2xl font-medium rounded-full text-white hover:bg-blue-800 hover:text-blue-300 float-right">
+        <a href="#" class="text-2xl font-medium rounded-full text-white hover:bg-blue-800 hover:text-blue-300 float-right">
           <svg class="m-2 h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
             <g>
               <path d="M22.772 10.506l-5.618-2.192-2.16-6.5c-.102-.307-.39-.514-.712-.514s-.61.207-.712.513l-2.16 6.5-5.62 2.192c-.287.112-.477.39-.477.7s.19.585.478.698l5.62 2.192 2.16 6.5c.102.306.39.513.712.513s.61-.207.712-.513l2.16-6.5 5.62-2.192c.287-.112.477-.39.477-.7s-.19-.585-.478-.697zm-6.49 2.32c-.208.08-.37.25-.44.46l-1.56 4.695-1.56-4.693c-.07-.21-.23-.38-.438-.462l-4.155-1.62 4.154-1.622c.208-.08.37-.25.44-.462l1.56-4.693 1.56 4.694c.07.212.23.382.438.463l4.155 1.62-4.155 1.622zM6.663 3.812h-1.88V2.05c0-.414-.337-.75-.75-.75s-.75.336-.75.75v1.762H1.5c-.414 0-.75.336-.75.75s.336.75.75.75h1.782v1.762c0 .414.336.75.75.75s.75-.336.75-.75V5.312h1.88c.415 0 .75-.336.75-.75s-.335-.75-.75-.75zm2.535 15.622h-1.1v-1.016c0-.414-.335-.75-.75-.75s-.75.336-.75.75v1.016H5.57c-.414 0-.75.336-.75.75s.336.75.75.75H6.6v1.016c0 .414.335.75.75.75s.75-.336.75-.75v-1.016h1.098c.414 0 .75-.336.75-.75s-.336-.75-.75-.75z"></path>
@@ -17,128 +17,113 @@
     </div>
 
     <hr class="border-gray-600">
-    <!--middle create tweet-->
+
+    <!-- Create Tweet -->
     <div class="flex">
       <div class="m-2 w-10 py-1">
         <img class="inline-block h-10 w-10 rounded-full" src="https://pbs.twimg.com/profile_images/1121328878142853120/e-rpjoJi_bigger.png" alt="" />
       </div>
       <div class="flex-1 px-2 pt-2 mt-2">
-        <textarea v-model="newTweet" class="bg-transparent text-gray-400 font-medium text-lg w-full" rows="2" cols="50" placeholder="What's happening?"></textarea>
+        <textarea v-model="newTweetContent" class="bg-black text-gray-400 font-medium text-lg w-full" rows="2" cols="50" placeholder="What's happening?"></textarea>
       </div>
     </div>
-    <!--middle create tweet below icons-->
+
+    <!-- Tweet Actions -->
     <div class="flex">
       <div class="w-10"></div>
       <div class="w-64 px-2">
         <div class="flex items-center">
-          <div class="flex-1 text-center px-1 py-1 m-2">
-            <a href="#" class="mt-1 group flex items-center text-blue-400 px-2 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
-              <svg class="text-center h-7 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-              </svg>
-            </a>
-          </div>
+                            <div class="flex-1 text-center px-1 py-1 m-2">
+                                <a href="#" class="mt-1 group flex items-center text-blue-400 px-2 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
+                                    <svg class="text-center h-7 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                  </a>
+                            </div>
 
-          <div class="flex-1 text-center py-2 m-2">
-            <a href="#" class="mt-1 group flex items-center text-blue-400 px-2 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
-              <svg class="text-center h-7 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path>
-                <path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-            </a>
-          </div>
+                            <div class="flex-1 text-center py-2 m-2">
+                                <a href="#" class="mt-1 group flex items-center text-blue-400 px-2 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
+                                    <svg class="text-center h-7 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"></path><path d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                                </a>
+                            </div>
 
-          <div class="flex-1 text-center py-2 m-2">
-            <a href="#" class="mt-1 group flex items-center text-blue-400 px-2 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
-              <svg class="text-center h-7 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
-              </svg>
-            </a>
-          </div>
+                            <div class="flex-1 text-center py-2 m-2">
+                                <a href="#" class="mt-1 group flex items-center text-blue-400 px-2 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
+                                    <svg class="text-center h-7 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                                </a>
+                            </div>
 
-          <div class="flex-1 text-center py-2 m-2">
-            <a href="#" class="mt-1 group flex items-center text-blue-400 px-2 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
-              <svg class="text-center h-7 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
+                            <div class="flex-1 text-center py-2 m-2">
+                                <a href="#" class="mt-1 group flex items-center text-blue-400 px-2 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
+                                <svg class="text-center h-7 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24"><path d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                            </a>
+                            </div>
+                        </div>
+                  
       </div>
-
       <div class="flex-1">
-        <button @click="postTweet" class="bg-blue-400 mt-5 hover:bg-blue-600 text-white font-bold py-2 px-8 rounded-full mr-8 float-right">
+        <button @click="addTweet" class="bg-blue-400 mt-5 hover:bg-blue-600 text-white font-bold py-2 px-8 rounded-full mr-8 float-right">
           Tweet
         </button>
       </div>
     </div>
-    <hr class="border-gray-600" />
-    <!--middle tweet-->
-    <div v-for="tweet in tweets" :key="tweet.id" class="flex flex-shrink-0">
+
+    <hr class="border-gray-600">
+
+    <!-- Tweets -->
+    <div v-for="tweet in tweets" :key="tweet.id" class="flex flex-shrink-0 w-full p-4">
       <div class="flex-shrink-0 m-2">
         <a href="#" class="flex title-font font-medium items-center">
-          <img class="h-11 w-11 rounded-full" src="https://pbs.twimg.com/profile_images/1121328878142853120/e-rpjoJi_bigger.png" alt="" />
+          <img v-if="tweet.avatar" class="h-11 w-11 rounded-full" :src="tweet.avatar" alt="" />
         </a>
       </div>
-      <div class="flex-1 bg-gray-800 rounded-lg px-4 pt-2 mt-2">
-        <div class="float-left">
-          <h2 class="text-base leading-6 font-medium text-gray-400">
-            Tailwind CSS <span class="text-sm leading-5 font-medium text-gray-500 group-hover:text-gray-300 transition ease-in-out duration-150"> @tailwindcss
-              ·
-            </span>
-            <span class="text-sm leading-5 font-medium text-gray-500 group-hover:text-gray-300 transition ease-in-out duration-150">
-              {{ tweet.timestamp }}
-            </span>
-          </h2>
-        </div>
-        <div class="clear-both"></div>
-        <p class="text-white block text-lg leading-snug mt-3">
-          {{ tweet.content }}
-        </p>
-       
-          <div class="flex">
-                    <div class="w-full">
-                        
-                        <div class="flex items-center">
+      <div class="flex-1 bg-transparent rounded-lg px-4 pt-2 mt-2">
+        <h2 class="text-base leading-6 font-medium text-gray-400">
+          {{ tweet.name }} <span class="text-sm leading-5 font-medium text-gray-500 group-hover:text-gray-300 transition ease-in-out duration-150">{{ tweet.nickname }} · {{ tweet.timestamp }}</span>
+        </h2>
+        <p class="text-white block text-lg leading-snug mt-3">{{ tweet.content }}</p>
+        <img v-if="tweet.image" class="h-80 w-100" :src="tweet.image" alt="" />
+        <div class="flex items-center">
          
                           
         
          
 
-          <div class="flex-1 text-center py-2 m-2">
-            <a href="#" class="w-12 mt-1 group flex items-center text-gray-500 px-3 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
-              <svg class="text-center h-7 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path>
-              </svg>
-            </a>
-          </div>
-          <div  :key="tweet.id" class="flex-1 text-center py-2 m-2">
-            <a href="#" class="w-12 mt-1 group flex items-center text-gray-500 px-3 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
-              <svg class="text-center h-7 w-6" :class="{ 'text-red-500': tweet.liked, 'text-gray-500': !tweet.liked }" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" @click="toggleLike(tweet)">
-                <path v-if="tweet.liked" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                <path v-else d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-              </svg>
-            </a>
-          </div>
+         <div class="flex-1 text-center py-2 m-2">
+           <a href="#" class="w-12 mt-1 group flex items-center text-gray-500 px-3 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
+             <svg class="text-center h-7 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+               <path d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4"></path>
+             </svg>
+           </a>
+         </div>
+         <div  :key="tweet.id" class="flex-1 text-center py-2 m-2">
+           <a href="#" class="w-12 mt-1 group flex items-center text-gray-500 px-3 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
+             <svg class="text-center h-7 w-6" :class="{ 'text-red-500': tweet.liked, 'text-gray-500': !tweet.liked }" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24" @click="toggleLike(tweet)">
+               <path v-if="tweet.liked" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+               <path v-else d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+             </svg>
+           </a>
+         </div>
 
 
 
-          <div class="flex-1 text-center py-2 m-2">
-            <a href="#" class="w-12 mt-1 group flex items-center text-gray-500 px-3 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
-              <svg class="text-center h-7 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M8 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-2m-4-1v8m0 0l3-3m-3 3L9 8m-5 5h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293h3.172a1 1 0 00.707-.293l2.414-2.414a1 1 0 01.707-.293H20"></path>
-              </svg>
-            </a>
-          </div>
+         <div class="flex-1 text-center py-2 m-2">
+           <a href="#" class="w-12 mt-1 group flex items-center text-gray-500 px-3 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
+             <svg class="text-center h-7 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+               <path d="M8 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-2m-4-1v8m0 0l3-3m-3 3L9 8m-5 5h2.586a1 1 0 01.707.293l2.414 2.414a1 1 0 00.707.293h3.172a1 1 0 00.707-.293l2.414-2.414a1 1 0 01.707-.293H20"></path>
+             </svg>
+           </a>
+         </div>
 
-          <div class="flex-1 text-center py-2 m-2">
-            <a href="#" class="w-12 mt-1 group flex items-center text-gray-500 px-3 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
-              <svg class="text-center h-7 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
-                <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
-              </svg>
-            </a>
-          </div>
-      </div></div></div></div>
+         <div class="flex-1 text-center py-2 m-2">
+           <a href="#" class="w-12 mt-1 group flex items-center text-gray-500 px-3 py-2 text-base leading-6 font-medium rounded-full hover:bg-blue-800 hover:text-blue-300">
+             <svg class="text-center h-7 w-6" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" stroke="currentColor" viewBox="0 0 24 24">
+               <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+             </svg>
+           </a>
+         </div>
+   
+        </div>
+      </div>
+      
     </div>
   </div>
 </template>
@@ -151,7 +136,8 @@ export default {
   data() {
     return {
       tweets: [],
-      newTweetContent: ''
+      newTweetContent: '',
+      error: null
     };
   },
   mounted() {
@@ -164,53 +150,46 @@ export default {
           this.tweets = response.data;
         })
         .catch(error => {
-          console.error("There was an error fetching the tweets!", error);
+          this.error = "Error fetching tweets: " + error.message;
         });
     },
     addTweet() {
-      const newTweet = {
-        content: this.newTweetContent,
-        user: {
-          avatar: "https://pbs.twimg.com/profile_images/1121328878142853120/e-rpjoJi_bigger.png",
-          name: "User Name",
-          handle: "@username"
-        },
-        created_at: new Date().toLocaleString(),
-        retweets: 0,
-        likes: 0,
-        comments: 0,
-        liked: false // Initial value for liked property
-      };
+      if (!this.newTweetContent.trim()) {
+        return; // Prevent adding empty tweets
+      }
 
-      axios.post('http://localhost:3000/tweets', newTweet)
-        .then(response => {
-          this.tweets.push(response.data); // Assuming your API returns the new tweet object with an ID
-          this.newTweetContent = ''; // Clear input field
-        })
-        .catch(error => {
-          console.error("There was an error adding the tweet!", error);
-        });
+      axios.post('http://localhost:3000/tweets', {
+        content: this.newTweetContent,
+        name: "KovalskiP.btc",
+        nickname: "@KovalskiP_btc",
+        avatar: "https://pbs.twimg.com/profile_images/1781334627774345217/4z9XislW_400x400.png",
+        timestamp: new Date().toLocaleString(),
+        like:"false" 
+      })
+      .then(response => {
+        this.tweets.unshift(response.data); // Add new tweet to the beginning of the list
+        this.newTweetContent = ''; // Clear input field
+      })
+      .catch(error => {
+        this.error = "Error adding tweet: " + error.message;
+      });
     },
     toggleLike(tweet) {
-      tweet.liked = !tweet.liked; // Toggle liked property
-      // Assuming you have an API endpoint to update the liked status on the server
-      axios.put(`http://localhost:3000/tweets/${tweet.id}`, { liked: tweet.liked })
-        .then(response => {
-          // Handle successful response if needed
-        })
-        .catch(error => {
-          console.error("Error updating like status:", error);
-        });
+      // Assuming 'liked' is a boolean property on your tweet object
+      tweet.liked = !tweet.liked;
+
+      // You can add logic here to update the like state on the server as well if needed
+      // Example: axios.put(`/tweets/${tweet.id}`, { liked: tweet.liked })
+      // .then(response => {
+      //   // Handle success if needed
+      // })
+      // .catch(error => {
+      //   // Handle error if needed
+      // });
     }
   }
 };
 </script>
 <style scoped>
-.main {
-    align-items: center;
-  
-    justify-content: center;
-  color: rgb(255, 255, 255);
-  width: 200%;
-}
+/* Scoped styles for the component */
 </style>
