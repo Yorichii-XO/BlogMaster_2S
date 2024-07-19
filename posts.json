@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "New trends in Tech",
+      "body": "This is a section of some simple filler text, also known as placeholder text.",
+      "image": "https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-260nw-1029506242.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Working with legacy stacks",
+      "body": "This is a section of some simple filler text, also known as placeholder text.",
+      "image": "https://st3.depositphotos.com/3591429/13518/i/450/depositphotos_135186088-stock-photo-diverse-people-at-the-meeting.jpg"
+    },
+    {
+      "id": 3,
+      "title": "10 best smartphones for devs",
+      "body": "This is a section of some simple filler text, also known as placeholder text.",
+      "image": "https://media.istockphoto.com/id/541574742/fr/photo/concept-de-travail-d%C3%A9quipe.jpg?s=612x612&w=0&k=20&c=-iEMrytyUuujo2tTQIVfeE8BKnLdgInrYrPl_jmipAY="
+    },
+    {
+      "id": 4,
+      "title": "8 High performance Notebooks",
+      "body": "This is a section of some simple filler text, also known as placeholder text.",
+      "image": "https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?cs=srgb&dl=pexels-pixabay-262508.jpg&fm=jpg"
+    },
+    {
+      "id": "c4da",
+      "title": "java",
+      "body": "zdbhehdehz",
+      "image": "https://th.bing.com/th/id/R.1226679da71531a946e74fa40a1805c5?rik=scc7tHgcFF20lg&riu=http%3a%2f%2fs3.narvii.com%2fimage%2fhupjs6kcafuhagaprout4wjsxg3zqnjt_00.jpg&ehk=yqM2nMBu7LR%2fBGQTl39uUflhQH0xxt2Y%2fEK9Uf9g5o4%3d&risl=&pid=ImgRaw&r=0"
+    },
+    {
+      "id": "f375",
+      "title": "MMAMMAM",
+      "body": "djebjhc",
+      "image": "https://th.bing.com/th/id/OIP.ri0b_pIWaLJIeeQG024BsgHaJ3?pid=ImgDet&rs=1"
+    }
+  ]
+}

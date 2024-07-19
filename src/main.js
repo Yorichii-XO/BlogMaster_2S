@@ -1,9 +1,8 @@
+// src/main.js
 import { createApp } from 'vue';
 import App from './App.vue';
-// import UserProfile from './components/UserProfile.vue';
+import router from './components/router';
 
-const app = createApp(App);
-
-// Enregistrer le composant globalement
-// app.component('mon-profile', UserProfile);
-app.mount('#app');
+createApp(App)
+  .use(router)
+  .mount('#app');
