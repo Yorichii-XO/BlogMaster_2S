@@ -1,0 +1,11 @@
+{
+    "users": [
+      { "id": 1, "name": "Alice", "email": "alice@example.com" },
+      { "id": 2, "name": "Bob", "email": "bob@example.com" }
+    ],
+    "todos": [
+      { "id": 1, "title": "Buy groceries", "completed": false },
+      { "id": 2, "title": "Walk the dog", "completed": true }
+    ]
+  }
+  
