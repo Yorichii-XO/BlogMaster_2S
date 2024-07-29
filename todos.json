@@ -1,5 +1,47 @@
 {
-    "todos": [
-        
-    ]
+  "todos": [
+    {
+      "title": "Learn Vue.j",
+      "category": "1",
+      "id": "1",
+      "categoryId": "1",
+      "status": "In Progress",
+      "dueDate": "2024-07-27"
+    },
+    {
+      "id": "e17c",
+      "title": "Build a Todo App",
+      "categoryId": "1",
+      "dueDate": "",
+      "status": "To Do"
+    },
+    {
+      "id": "f9d7",
+      "title": "Laravel Developerzzzz",
+      "categoryId": "1",
+      "dueDate": "2024-07-27",
+      "status": "In Progress"
+    },
+    {
+      "id": "4fcb",
+      "title": "i have to go out of my mind",
+      "categoryId": "2",
+      "dueDate": "2024-07-20",
+      "status": "Done"
+    },
+    {
+      "id": "9f2e",
+      "title": "You can",
+      "categoryId": "",
+      "dueDate": "2024-07-13",
+      "status": "In Progress"
+    },
+    {
+      "id": "59ea",
+      "title": "i have to go out of my mind",
+      "categoryId": "",
+      "dueDate": "2024-07-27",
+      "status": "To Do"
+    }
+  ]
 }

@@ -1,25 +1,25 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "title": "New trends in Tech",
       "body": "This is a section of some simple filler text, also known as placeholder text.",
       "image": "https://www.shutterstock.com/image-photo/bloggingblog-concepts-ideas-white-worktable-260nw-1029506242.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Working with legacy stacks",
       "body": "This is a section of some simple filler text, also known as placeholder text.",
       "image": "https://st3.depositphotos.com/3591429/13518/i/450/depositphotos_135186088-stock-photo-diverse-people-at-the-meeting.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "10 best smartphones for devs",
       "body": "This is a section of some simple filler text, also known as placeholder text.",
       "image": "https://media.istockphoto.com/id/541574742/fr/photo/concept-de-travail-d%C3%A9quipe.jpg?s=612x612&w=0&k=20&c=-iEMrytyUuujo2tTQIVfeE8BKnLdgInrYrPl_jmipAY="
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "8 High performance Notebooks",
       "body": "This is a section of some simple filler text, also known as placeholder text.",
       "image": "https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?cs=srgb&dl=pexels-pixabay-262508.jpg&fm=jpg"
@@ -34,6 +34,36 @@
       "id": "f375",
       "title": "MMAMMAM",
       "body": "djebjhc",
+      "image": "https://th.bing.com/th/id/OIP.ri0b_pIWaLJIeeQG024BsgHaJ3?pid=ImgDet&rs=1"
+    },
+    {
+      "id": "0706",
+      "title": "dd",
+      "body": "sss",
+      "image": "https://zieduveikals.lv/bildes/ro%C5%BEu_pu%C5%A1%C4%B7is.jpg"
+    },
+    {
+      "id": "85cb",
+      "title": "pepeo",
+      "body": "fhfhh",
+      "image": "https://th.bing.com/th/id/OIP.thIFF_p6Hqj79Q4kUIMNGgHaK6?pid=ImgDet&rs=1"
+    },
+    {
+      "id": "6d30",
+      "title": "test post",
+      "body": "body of test post",
+      "image": "https://th.bing.com/th/id/OIP.thIFF_p6Hqj79Q4kUIMNGgHaK6?pid=ImgDet&rs=1"
+    },
+    {
+      "id": "b6fe",
+      "title": "girls",
+      "body": "MMM",
+      "image": "https://th.bing.com/th/id/OIP.ri0b_pIWaLJIeeQG024BsgHaJ3?pid=ImgDet&rs=1"
+    },
+    {
+      "id": "3745",
+      "title": "test post",
+      "body": "some....",
       "image": "https://th.bing.com/th/id/OIP.ri0b_pIWaLJIeeQG024BsgHaJ3?pid=ImgDet&rs=1"
     }
   ]

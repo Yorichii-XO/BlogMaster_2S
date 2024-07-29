@@ -1,10 +1,20 @@
 {
-    "users": [
-      {
-        "id": 1,
-        "username": "user1",
-        "password": "password1"
-      }
-    ]
-  }
-  
+  "users": [
+    {
+      "id": "1",
+      "email": "exemple@gmail.com",
+      "username": "user1",
+      "password": "password1"
+    },
+    {
+      "id": "6172",
+      "email": "ghitasidad@gmail.com",
+      "password": "gita sidad"
+    },
+    {
+      "id": "7cff",
+      "email": "marwa@gmail.com",
+      "password": "marwa@123"
+    }
+  ]
+}

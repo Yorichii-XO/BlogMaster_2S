@@ -1,5 +1,5 @@
 <template>
-  <nav class="bg-white shadow shadow-gray-300 w-full px-8 md:px-auto space-x-8 text-dark">
+  <nav class="fixed bg-white shadow shadow-gray-300 w-full px-8 md:px-auto space-x-8 text-dark z-40">
     <div class="md:h-16 h-28 mx-auto md:px-4 container flex items-center justify-between flex-wrap md:flex-nowrap">
       <!-- Logo -->
       <div class="text-indigo-500 md:order-1">
@@ -11,45 +11,85 @@
       </div>
       <div class="text-gray-500 order-3 w-full md:w-auto md:order-2">
         <ul class="flex font-semibold justify-between space-x-4">
-          <!-- Active Link = text-indigo-500
-               Inactive Link = hover:text-indigo-500 -->
-          <li>
+
+          <li v-if="isAuthenticated">
             <router-link to="/" class="text-gray-500 hover:text-indigo-500">Home</router-link>
           </li>
-          <li>
+          <li v-if="isAuthenticated">
             <router-link to="/profile" class="text-gray-500 hover:text-indigo-500">Profile</router-link>
           </li>
-          <li>
+          <li v-if="isAuthenticated">
             <router-link to="/posts" class="text-gray-500 hover:text-indigo-500">Posts</router-link>
           </li>
-          <li>
+          <li v-if="isAuthenticated">
             <router-link to="/users" class="text-gray-500 hover:text-indigo-500">Users</router-link>
           </li>
-          <li>
+          <li v-if="isAuthenticated">
             <router-link to="/todos" class="text-gray-500 hover:text-indigo-500">Todos</router-link>
           </li>
         </ul>
       </div>
-      <div class="order-2 md:order-3">
-        <router-link to="/login" class="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-gray-50 rounded-xl flex items-center gap-2">
+      <div class="sticky flex gap-2 order-2 md:order-3">
+        <!-- Conditionally render login or logout based on authentication status -->
+        <router-link v-if="!isAuthenticated" to="/login"
+          class="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-gray-50 rounded-xl flex items-center gap-2">
           <!-- Heroicons - Login Solid -->
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
-            <path fill-rule="evenodd" d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z" clip-rule="evenodd" />
+            <path fill-rule="evenodd"
+              d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z"
+              clip-rule="evenodd" />
           </svg>
           Login
         </router-link>
+        <router-link v-if="!isAuthenticated" to="/register"
+          class="px-4 py-2 bg-indigo-500 hover:bg-indigo-600 text-gray-50 rounded-xl flex items-center gap-2">
+          <!-- Heroicons - Register Solid -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z"
+              clip-rule="evenodd" />
+          </svg>
+          Register
+        </router-link>
+        <button v-if="isAuthenticated" @click="logout"
+          class="px-4 py-2 text-white hover:bg-indigo-100 bg-indigo-500 rounded-xl flex items-center gap-2">
+          <!-- Heroicons - Logout Solid -->
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M3 3a1 1 0 011 1v12a1 1 0 11-2 0V4a1 1 0 011-1zm7.707 3.293a1 1 0 010 1.414L9.414 9H17a1 1 0 110 2H9.414l1.293 1.293a1 1 0 01-1.414 1.414l-3-3a1 1 0 010-1.414l3-3a1 1 0 011.414 0z"
+              clip-rule="evenodd" />
+          </svg>
+          Logout
+        </button>
       </div>
     </div>
   </nav>
-  <hr class="bg-gray-200"/>
+  <hr class="bg-gray-200" />
 </template>
 
 <script>
 export default {
   name: 'NavbarApp',
+  data() {
+    return {
+      isAuthenticated: false
+    };
+  },
+  mounted() {
+    this.checkAuthStatus();
+  },
+  methods: {
+    checkAuthStatus() {
+
+      const token = localStorage.getItem('token');
+      this.isAuthenticated = !!token;
+    },
+    logout() {
+
+      localStorage.removeItem('token');
+      this.isAuthenticated = false;
+      this.$router.push('/');
+    }
+  }
 };
 </script>
-
-<style scoped>
-/* Additional scoped styles if needed */
-</style>
